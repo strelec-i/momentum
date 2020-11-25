@@ -1,0 +1,214 @@
+* {
+  margin: 0;
+  padding: 0;
+  box-sizing: border-box;
+}
+
+body {
+  font-family: "Montserrat", sans-serif;
+  color: #eceef1;
+  background-size: cover;
+  background-repeat: no-repeat;
+  background-position: center;
+  transition: background-image 1s ease-in-out;
+  font-size: 1rem;
+}
+
+h1 {
+  margin-bottom: 0.6rem;
+  font-size: 2.5rem;
+}
+
+h2 {
+  margin-bottom: 0.6rem;
+  font-size: 1.5rem;
+}
+
+h2:last-child {
+  margin-bottom: 0;
+}
+
+.btn {
+  display: block;
+  width: 3rem;
+  height: 3rem;
+  border: 0;
+  opacity: 0.8;
+  transition: opacity 0.1s linear;
+  background-size: cover;
+}
+
+.btn:hover {
+  opacity: 1;
+  cursor: pointer;
+}
+
+.btn:focus, .btn:active {
+  outline: none;
+}
+
+main {
+  width: 100%;
+  height: 100vh;
+  overflow: auto;
+  background: rgba(0, 0, 0, 0.3);
+  position: relative;
+  display: flex;
+  /* flex-direction: column; */
+  /* align-items: center; */
+  justify-content: center;
+}
+
+.section-header {
+  width: 100%;
+  position: absolute;
+  display: flex;
+  justify-content: space-between;
+  padding: 1rem;
+}
+
+.next-image {
+  background: url("../assets/icons/next-fon.png") center no-repeat;
+}
+
+.next-image:active {
+  transform: scale(1.02);
+}
+
+.weather {
+  text-align: center;
+  line-height: 1.5rem;
+  background: rgba(0, 0, 0, 0.2);
+  opacity: 0.8;
+  transition: opacity 0.1s linear;
+  padding: 1rem;
+}
+
+.weather:hover {
+  opacity: 1;
+}
+
+.weather-icon{
+  font-size: 3rem;
+}
+
+section{
+  display: flex;
+}
+.time {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  justify-content: center;
+}
+
+.time-am {
+  font-size: 8rem;
+  margin-bottom: 0.6rem;
+}
+
+.day-of-month {
+  font-size: 4rem;
+  margin-bottom: 0.6rem;
+  text-align: center;
+}
+
+.quote {
+  background: rgba(0, 0, 0, 0.2);
+  font-style: italic;
+  line-height: 1.5rem;
+  opacity: 0.8;
+  padding: 1rem;
+  width: 30rem;
+  position: absolute;
+  left: 0;
+  bottom: 0;
+}
+
+.quote:hover {
+  opacity: 1;
+}
+
+.quote-content {
+  margin-bottom: 1rem;
+}
+
+.quote-content blockquote {
+  margin-bottom: 1rem;
+}
+
+.quote-content figcaption {
+  text-align: right;
+}
+
+.other-quote {
+  background: url("../assets/icons/next-quote.png");
+  transition: transform 0.5s linear;
+  width: 2.5rem;
+  height: 2.5rem;
+  background-size: cover;
+}
+
+.other-quote:hover {
+  transform: rotate(360deg);
+}
+
+@media (max-width: 1199px){
+  .time-am {
+    font-size: 6rem;
+  }
+  .day-of-month {
+    font-size: 3rem;
+  }
+}
+
+@media (max-width: 767px) {
+  body {
+    font-size: 0.9rem;
+  }
+
+  .section-header{
+    padding: 0.5rem;
+  }
+  .weather{
+    padding: 0;
+  }
+
+  h1 {
+    font-size: 1rem;
+  }
+  h2 {
+    font-size: 1rem;
+    text-align: center;
+  }
+  .next-image {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+  .time {
+    margin: 0;
+  }
+  .time-am {
+    font-size: 4rem;
+  }
+  .day-of-month {
+    font-size: 1.5rem;
+  }
+  .quote {
+    padding: 1rem;
+    width: 100%;
+  }
+  .quote-content {
+    margin-bottom: 0.5rem;
+  }
+  .quote-content blockquote {
+    margin-bottom: 0.5rem;
+  }
+  .other-quote {
+    width: 30px;
+    height: 30px;
+    background-size: cover;
+  }
+}
+/*# sourceMappingURL=style2.css.map */
